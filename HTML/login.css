@@ -1,0 +1,42 @@
+#mainDiv{
+    width: 100%;
+    padding: 0;
+    background-color: pink;
+    height: 100vh;
+}
+
+#row1{
+    height: 550px;
+    width: 100%;
+    border: 2px blue solid;
+    overflow: hidden;
+}
+#row2{
+    height: 100% ;
+    width: 100%;
+    margin: auto;
+}
+#imgSection{
+    height: 100% ;
+    padding: 0;
+    border-radius: 16px 0 0 16px;
+    overflow: hidden;
+}
+#imgSection img{
+    object-fit: cover;
+    width: 100%;
+}
+#loginSection{
+    border: 2px solid red;
+    border-radius: 0 16px 16px 0;
+    overflow: hidden;
+    background-color: white;
+    height: auto;
+}
+#signIn{
+    font-weight: 700;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+
