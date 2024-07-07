@@ -1,17 +1,16 @@
-#mainDiv{
-    width: 100%;
-    padding: 0;
-    background-color: pink;
-    height: 100vh;
+body{
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
 }
 
 #row1{
-    height: 550px;
-    width: 100%;
-    border: 2px blue solid;
+    height: 560px;
     overflow: hidden;
+    background-color:transparent;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+    border: red solid 1px;
 }
-#row2{
+#row2 ,#row2SecondForm{
     height: 100% ;
     width: 100%;
     margin: auto;
@@ -24,10 +23,8 @@
 }
 #imgSection img{
     object-fit: cover;
-    width: 100%;
 }
 #loginSection{
-    border: 2px solid red;
     border-radius: 0 16px 16px 0;
     overflow: hidden;
     background-color: white;
@@ -40,3 +37,69 @@
 }
 
 
+#hidePopupButton{
+    position: absolute;
+    top:20px;
+    left:82%;
+    background-color: transparent;
+    border: none;
+}
+
+.secondForm{
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1000;
+}
+.secondFormSubmit{
+    width: 88%;
+    margin: auto;
+    background-color: #151313;
+    color: white;
+    border: none;
+
+}
+
+#forgotPasswordSecondForm{
+    color: grey;
+}
+
+.secondFormSubmit form label{
+    font-size: 13px;
+}
+
+#container label{
+     font-size: 13px;
+    color: grey;
+}
+
+@media (max-width: 961px) {
+    #hidePopupButton{
+        top:10px;
+    }
+    #row1{
+        height: 540px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    #row1{
+     position: relative;
+        right: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #container {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .container2{
+        display: none;
+    }
+}
