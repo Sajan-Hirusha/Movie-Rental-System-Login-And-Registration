@@ -11,6 +11,9 @@
 </head>
 <body>
 
+<div id="alertContainer"></div>
+
+
 <div id="container">
     <div id="row1" class="row justify-content-center">
         <div id="imgSection" class="col-sm-4 col-md-4 col-lg-4 text-center">
@@ -40,24 +43,24 @@
                     </div>
                 </div>
             </div>
-            <form action="#!">
+            <form class="movieRegistration">
                 <div id="row2" class="row gy-3 overflow-hidden">
                     <div class="col-6">
                         <div class="form-floating mb-2">
-                            <input type="email" class="form-control" name="email" id="fullName" required>
+                            <input type="text" class="form-control" name="fullName" id="fullName" required>
                             <label for="fullName" class="form-label">Full Name</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-2">
-                            <input type="date" class="form-control" name="email" id="birthday"  required>
+                            <input type="date" class="form-control" name="birthday" id="birthday"  required>
                             <label for="birthday" class="form-label">Birthday</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-2">
-                            <input type="text" class="form-control" name="email" id="nic"  required>
-                            <label for="nic" class="form-label">Birthday</label>
+                            <input type="text" class="form-control" name="nic" id="nic"  required>
+                            <label for="nic" class="form-label">NIC</label>
                         </div>
                     </div>
                     <div class="col-6">
@@ -74,8 +77,8 @@
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-2">
-                            <input type="password" class="form-control" name="password" id="confirmPassword" value="" placeholder="Password" required>
-                            <label for="confirmPassword" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" value="" placeholder="Password" required>
+                            <label for="confirmPassword"  class="form-label"> Confirm Password</label>
                         </div>
                     </div>
 
@@ -108,36 +111,30 @@
 <div class="container2 mx-auto w-100" style="border: solid red 2px">
     <div class="secondForm w-75 mx-auto pt-2">
         <h4 class="text-center">SIGN Up</h4>
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 movieRegistration" >
             <div class="col-11 mx-auto">
                 <label for="fullName2" class="form-label">Full name</label>
-                <input type="text" class="form-control" id="fullName2" required>
-                <div class="valid-feedback">Looks good!</div>
+                <input type="text" name="fullName" class="form-control" id="fullName2" required>
             </div>
             <div class="col-5 mx-auto">
                 <label for="birthday2" class="form-label">Birthday</label>
-                <input type="date" class="form-control" id="birthday2" required>
-                <div class="valid-feedback">Looks good!</div>
+                <input type="date" name="birthday" class="form-control" id="birthday2" required>
             </div>
             <div class="col-5 mx-auto">
                 <label for="nic2" class="form-label">Nic</label>
-                <input type="text" class="form-control" id="nic2" required>
-                <div class="valid-feedback">Looks good!</div>
+                <input type="text" name="nic" class="form-control" id="nic2" required>
             </div>
             <div class="col-11 mx-auto">
                 <label for="email2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email2" required>
-                <div class="valid-feedback">Looks good!</div>
+                <input type="email" name="email" class="form-control" id="email2" required>
             </div>
             <div class="col-5 mx-auto">
                 <label for="password2" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password2" required>
-                <div class="valid-feedback">Looks good!</div>
+                <input type="password" name="password" class="form-control" id="password2" required>
             </div>
             <div class="col-5 mx-auto">
                 <label for="confirmPassword2" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword2" required>
-                <div class="valid-feedback">Looks good!</div>
+                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword2" required>
             </div>
 
             <label class="ms-3" id="forgotPasswordSecondForm">Forgot Password</label>

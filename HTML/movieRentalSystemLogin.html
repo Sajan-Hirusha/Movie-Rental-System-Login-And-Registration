@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <form action="#!">
+            <form class="movieLogin">
                 <div id="row2" class="row gy-3 overflow-hidden">
                     <div class="col-12">
                         <div class="form-floating mb-3">
@@ -88,15 +88,15 @@
 <div class="container2 mx-auto w-75" style="border: solid red 2px">
 <div class="secondForm w-75 mx-auto pt-2">
     <h4 class="text-center">SIGN IN</h4>
-    <form class="row g-3 needs-validation" novalidate>
+    <form class="row g-3 needs-validation movieLogin" novalidate>
         <div class="col-11 mx-auto">
             <label for="validationCustom01" class="form-label">Email</label>
-            <input type="email" class="form-control" id="validationCustom01" required>
+            <input type="email" class="form-control" name="email" id="validationCustom01" required>
             <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-11 mx-auto">
             <label for="validationCustom02" class="form-label">Password</label>
-            <input type="password" class="form-control" id="validationCustom02" required>
+            <input type="password" name="password" class="form-control" id="validationCustom02" required>
             <div class="valid-feedback">Looks good!</div>
         </div>
         <label class="ms-3" id="forgotPasswordSecondForm">Forgot Password</label>
